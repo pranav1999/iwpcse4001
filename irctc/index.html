@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>irctc-project</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="myfunc()">
+    
+    <div class="heading" >
+        <h1>I R C T C</h1>
+    </div>
+    
+        <div class="main-block">
+            <h6>Book Your Ticket</h6>
+            <form autocomplete="off" action="/">
+
+              <!--experimental-->
+              <div class="autocomplete">
+                <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+                <input id="myInput" type="text" name="myCountry" placeholder="From">
+              </div>
+
+              <div class="autocomplete">
+                <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+                <input id="myInputt" type="text" name="myCountry" placeholder="To">
+              </div>
+
+              <!-- <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+              <input type="text" name="name" id="myInput" placeholder="From" required/> -->
+
+              <!-- <label id="icon" for="name"><i class="fas fa-user"></i></label>
+              <input type="text" name="name" id="name" placeholder="To" required/> -->
+
+              <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+              <input type="date" name="name" id="name" placeholder="Date" required/>
+
+              <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+              <input type="text" name="name" id="name" placeholder="Class" required/>
+                            
+              <!-- <input type="checkbox" value="none" id="Flexible with date" name="gender" checked/>
+              <label for="Flexible with date" class="radio">Flexible with date</label>
+
+              <input type="checkbox" value="none" id="Divyaang consession" name="gender" />
+              <label for="Divyaang consession" class="radio">Divyaang consession</label> -->
+
+              <div class="cntr">
+              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+              <label for="vehicle1"> Flexible with date</label><br>
+              <br>
+              <br>
+              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+              <label for="vehicle2"> Divyaang consession</label><br>
+              </div>
+              
+              <div class="btn-block">
+                <button type="submit" href="/">Find Trains</button>
+              </div>
+            </form>
+          </div>
+
+          
+
+          <script src="js/script.js"></script>
+</body>
+</html>
