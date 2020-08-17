@@ -128,6 +128,32 @@ function autocomplete(inp, arr) {
   autocomplete(document.getElementById("myInput"), countries);
   autocomplete(document.getElementById("myInputt"), countries);
 
+
+  // function myFunction() {
+  //   var checkBox = document.getElementById("myCheck");
+  //   var text = document.getElementById("text").innerHTML;
+  //   if (checkBox.checked == true){
+  //     text="Find Train and Taxi";
+  //     alert("box checked");
+  //   } else {
+  //      text="Find Train";
+  //   }
+  // }
+
   function myfunc(){
-      alert("js is working");
+      // if (checkbox.checked) {
+      //   alert("checked");
+      //   document.getElementById("text").innerHTML="Find Train & Taxi";
+      // }
+
+      if(document.getElementById('mycheck').checked){
+        // it is checked. Do something
+        document.getElementById("text").innerHTML="Find Train & Taxi";
+    }
+    else{
+        // it isn't checked. Do something else
+        document.getElementById("text").innerHTML="Find Train ";
+    }   
   }
+
+  

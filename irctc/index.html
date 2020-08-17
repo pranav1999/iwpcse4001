@@ -6,7 +6,7 @@
     <title>irctc-project</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body onload="myfunc()">
+<body>
     
     <div class="heading" >
         <h1>I R C T C</h1>
@@ -46,16 +46,18 @@
               <label for="Divyaang consession" class="radio">Divyaang consession</label> -->
 
               <div class="cntr">
-              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+              <input type="checkbox" id="vehicle1" name="fd" value="">
               <label for="vehicle1"> Flexible with date</label><br>
               <br>
-              <br>
-              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+              <input type="checkbox" id="vehicle2" name="dc" value="">
               <label for="vehicle2"> Divyaang consession</label><br>
+              <br>
+              <input type="checkbox" onclick="myfunc()" id="mycheck" name="ftt" value="">
+              <label for="vehicle2">Find taxi with trains</label><br>
               </div>
               
               <div class="btn-block">
-                <button type="submit" href="/">Find Trains</button>
+                <button type="submit" id="text" href="/">Find Trains</button>
               </div>
             </form>
           </div>
