@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat2assignment2</title>
+
+    <style>
+        body{
+            background-color: #f5877f;
+        }
+
+        .myform{
+            margin-left: auto; 
+            margin-right: auto; 
+            text-align: center;
+            line-height: 1.9;
+            background-color: #f5877f;
+            width: fit-content;
+            padding: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;"> Q1(a). <br><span id="q1" onmouseover="q1()">hover on this</span></h1>
+    <h1 style="text-align: center;"> Q1(b). <br><span id="q2" onmouseover="q2()">hover on this</span></h1>
+    <h1 style="text-align: center;"> Q1(c). <br><span id="q3" onmouseover="q3()">10 is greater than 9 hover on this</span></h1>
+    <h1 style="text-align: center;"> Q1(d). <br><span id="q4" onmouseover="q4()">hover on this</span></h1>
+    <h1 style="text-align: center;"> Q1(e). <br><span id="q5" onmouseover="q5()">hover on this</span></h1>
+
+    <hr>
+    <div class="myform" >
+    <h1>Q2.</h1>
+        <form class="login100-form validate-form" name="form1">
+            <span class="login100-form-title p-b-33">
+            Account Login
+            </span>
+            <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+            <input id="email" type="text" name="email" placeholder="Email">
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+            </div>
+            <div class="wrap-input100 rs1 validate-input" data-validate="Password is required">
+            <input class="input100" type="password" name="pass" placeholder="Password">
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+            </div>
+            <div class="container-login100-form-btn m-t-20">
+            <button class="login100-form-btn" onclick="ValidateEmail(document.form1.email)">
+            Sign in 
+            </button>
+            </div>
+            <div class="text-center p-t-45 p-b-4">
+            <span class="txt1">
+            Forgot
+            </span>
+            <a href="#" class="txt2 hov1">
+            Username / Password?
+            </a>
+            </div>
+            <div class="text-center">
+            <span class="txt1">
+            Create an account?
+            </span>
+            <a href="#" class="txt2 hov1">
+            Sign up
+            </a>
+            </div>
+            </form>
+    </div>
+
+    
+
+
+    <script>
+        function q1() {
+            document.getElementById("q1").innerHTML="this is changed";
+            }
+
+        function q2() {
+            var cars = ["Saab", "Volvo", "BMW"];
+            document.getElementById("q2").innerHTML = cars;
+        }
+
+        function q3() {
+            document.getElementById("q3").innerHTML =  Boolean(10 > 9);
+        }
+
+        function q4() {
+            var d = new Date();
+            document.getElementById("q4").innerHTML = d;
+        }
+
+        function q5() {
+            document.getElementById("q5").innerHTML = Math.PI;
+        }
+
+        function ValidateEmail(inputText)
+        {
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(inputText.value.match(mailformat))
+        {
+        document.form1.email.focus();
+        return true;
+        }
+        else
+        {
+        alert("You have entered an invalid email address!");
+        document.form1.email.focus();
+        return false;
+        }
+        }
+        
+    </script>
+</body>
+</html>
