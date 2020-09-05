@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body onload="fun()">
+    <section class="q1n2">
+        <div class="input">
+            <h1>Question 1 and 2</h1>
+            <div id="form">
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" value=""><br>
+                    <label for="password">Last name:</label>
+                    <input type="password" id="lname" name="lname" value=""><br><br>
+                    <label for="cars">Choose a car:</label>
+
+                    <select id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select> <br><br>
+                    <input type="radio" onclick="radio()">
+                    <p id="radio"></p>
+                    <input type="checkbox" onclick="checkbox()">
+                    <p id="checkbox"></p><br>
+
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="q3">
+        <div class="head">
+            <h1 id="btn1" style="margin-bottom: 10px;">Question 3</h1>
+
+            <p>If you click on the "Hide" button, I will disappear.</p>
+
+            <button id="hide">Hide</button>
+            <button id="show">Show</button>
+
+            <button id="fade">Click to fade in boxes</button><br><br>
+
+            <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+            <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+            <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+        </div>
+        <div >
+            <h1 id="btn2">remove me</h1>
+        </div>
+        <div id="big" style="width: 100; height: 100; background-color: brown;">
+            <p>make me big</p>
+        </div>
+        <p id="pu" style="color: bisque;">my style will be changed</p>
+        <div class="ancestors">
+            <div style="width:500px;">div (great-grandparent)
+              <ul>ul (grandparent)  
+                <li>li (direct parent)
+                  <span>span</span>
+                </li>
+              </ul>   
+            </div>
+          
+            <div style="width:500px;">div (grandparent)   
+              <p>p (direct parent)
+                <span>span</span>
+              </p> 
+            </div>
+          </div>
+          
+    </section>
+
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

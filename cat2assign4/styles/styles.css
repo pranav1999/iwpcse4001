@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+  
+  }
+
+
+
+
+
+.q1n2{
+    background-color: #ff6666;
+}
+.q3{
+    background-color: #ff3333;
+}
+
+h1{
+    margin: 0px auto;
+    color: #ffffff;
+}
+
+#form{
+    
+    padding: 10px;
+}
+
+.ancestors * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+  }
